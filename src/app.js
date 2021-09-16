@@ -383,12 +383,12 @@ class App{
                     return;
                 }
                 const contents = this.#life.restart({
-                    CHR: groups.CHR.get(),
-                    INT: groups.INT.get(),
-                    STR: groups.STR.get(),
-                    MNY: groups.MNY.get(),
+                    CHR: 0,
+                    INT: 10,
+                    STR: 10,
+                    MNY: 0,
                     SPR: 5,
-                    TLT: Array.from(this.#talentSelected).map(({id})=>id),
+                    TLT: [1010,1048,1056]
                 });
                 this.switch('trajectory');
                 this.#pages.trajectory.born(contents);
