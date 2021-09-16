@@ -317,7 +317,7 @@ class App {
 
         this.#isEnd = false;
         this.#talentSelected.clear();
-        this.#propertyAllocation = {CHR:0,INT:0,STR:0,MNY:0,SPR:5};
+        this.#propertyAllocation = {CHR:0,INT:10,STR:10,MNY:0,SPR:5};
         this.#step = this.Steps.TALENT;
         this.#randomTalents = this.#life.talentRandom();
         return this.list();
